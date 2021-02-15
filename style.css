@@ -107,3 +107,8 @@ button {
   border-color: whitesmoke;
   padding: 4px;
 }
+
+p {
+  text-align: center;
+  color: aliceblue;
+}
