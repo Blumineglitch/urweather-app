@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ur weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/7964a88ebc.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Raleway&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Raleway:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+<link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <h1>  
+    <i class="fas fa-grip-lines-vertical"></i>  Ur weather <i class="fas fa-grip-lines-vertical"></i>
+    </h1>
+  
+    <div class="container">
+<div class="card">
+    <div class="card-body">
+    <h2>
+        <span class="temperature" id="temperature">0</span><span class="units">
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a> <br/>
+<i class="fas fa-cloud"></i> <span id="city">Where r u?</span> 
+    </h2>
+    <h3>
+        It is currently...
+    </h3> 
+    <ul>
+        <li> Sky: <span id="description"></span> </li>
+        <li> Wind: <span class="wind" id="win"> 0 </span> km/h</li>
+        <li> Humidity: <span class="humidity" id="hum"> 0 </span>%</li>
+    </ul>
+    <br/>
+   <form id= search-form class="search-form">
+       <div class="row">
+           <div class="col-3">
+<input class="form-control" type="submit" value="Search">
+           </div>
+<div class="col-6">
+<input type="search" 
+placeholder="Ur City.." 
+autofocus="on" 
+autocomplete="off" id="city-input" class="form-control shadow-sm">
+       </div>
+   </div><div>
+    <button class="findMe">
+        Find me
+    </button></div>
+   </form>
+   
+<br/>
+<br/>
+<div class="row">
+    <div class="col">
+        Mon
+        <div class="cardm">
+            <div class="card-body">
+                <i class="fas fa-cloud-showers-heavy"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        Thue
+        <div class="cardm">
+            <div class="card-body">
+                <i class="fas fa-bolt"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        Wed
+        <div class="cardm">
+            <div class="card-body">
+                <i class="fas fa-cloud-moon"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        Thu
+        <div class="cardm">
+            <div class="card-body">
+                <i class="fas fa-smog"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        Fri
+        <div class="cardm">
+            <div class="card-body">
+                <i class="fas fa-sun"></i>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+   
+    <script src="index.js"> 
+    </script>
+</body>
+</html>
