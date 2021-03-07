@@ -44,11 +44,6 @@ function searchLocation(position) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
-function handleSubmit(event) {
-  event.preventDefault();
-  let cityInputElement = document.querySelector("#city-input");
-  search(cityInputElement.value);
-}
 function displayFTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -66,7 +61,7 @@ function displayCTemperature(event) {
 }
 let celsiusTemperature = null;
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", handleSubmit);
+form.addEventListener("submit", searchForm);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
