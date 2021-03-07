@@ -44,7 +44,11 @@ function searchLocation(position) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
-
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
 function displayFTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
