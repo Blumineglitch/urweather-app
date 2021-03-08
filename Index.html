@@ -31,13 +31,14 @@
         <span class="temperature" id="temperature">0</span><span class="units">
             <a href="#" id="celsius-link">°C</a> |
             <a href="#" id="fahrenheit-link">°F</a> <br/>
-<i class="fas fa-cloud"></i> <span id="city">Where r u?</span> 
+<span > ☁ </span>
+ <span id="city">Where r u?</span> <span> ☁ </span>
     </h2>
     <h3>
         It is currently...
     </h3> 
     <ul>
-        <li> Sky: <span id="description"></span> </li>
+        <li> Sky: <span id="description"></span> <img src=""" alt="" id="wIcon"></li>
         <li> Wind: <span class="wind" id="win"> 0 </span> km/h</li>
         <li> Humidity: <span class="humidity" id="hum"> 0 </span>%</li>
     </ul>
@@ -61,51 +62,10 @@ autocomplete="off" id="city-input" class="form-control shadow-sm">
    
 <br/>
 <br/>
-<div class="row">
-    <div class="col">
-        Mon
-        <div class="cardm">
-            <div class="card-body">
-                <i class="fas fa-cloud-showers-heavy"></i>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        Thue
-        <div class="cardm">
-            <div class="card-body">
-                <i class="fas fa-bolt"></i>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        Wed
-        <div class="cardm">
-            <div class="card-body">
-                <i class="fas fa-cloud-moon"></i>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        Thu
-        <div class="cardm">
-            <div class="card-body">
-                <i class="fas fa-smog"></i>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        Fri
-        <div class="cardm">
-            <div class="card-body">
-                <i class="fas fa-sun"></i>
-            </div>
-        </div>
-    </div>
+
+<div class="row weather-forecast" id="forecast"></div>
 </div>
-    </div>
-</div>
-    </div>
+<br/>
    <p>
        Open source code by <a href="https://github.com/Blumineglitch/urweather-app" id="gitLink"> Blumineglitch </a>
        

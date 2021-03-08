@@ -14,6 +14,7 @@ h1 {
 }
 h2 {
   text-align: center;
+  font-size: 30px;
   padding: 30px;
   position: static;
   font-family: "Raleway", sans-serif;
@@ -21,23 +22,22 @@ h2 {
 }
 h3 {
   text-align: center;
+  padding: 0;
+  margin: auto 0;
   font-size: 20px;
   font-weight: lighter;
   color: white;
 }
 
-i.fa-cloud {
+h2.wIcon {
   color: rgba(128, 128, 128, 0.151);
-  font-size: 150px;
   text-align: center;
-  position: absolute;
-  transform: translate(-5%, 30%);
 }
 
 ul {
   display: inline;
   text-align: center;
-  font-size: 10px;
+  font-size: 15px;
   left: 2px;
   bottom: px;
   list-style: none;
@@ -108,6 +108,10 @@ button {
   padding: 4px;
 }
 
+.forecastTemp {
+  text-align: center;
+  color: antiquewhite;
+}
 p {
   text-align: center;
   color: aliceblue;
