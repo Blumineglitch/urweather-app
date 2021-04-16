@@ -124,4 +124,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCTemperature);
 
 let currentLocationButton = document.querySelector("#find-me-button");
-currentLocationButton.addEventListener("click", searchLocation);
+currentLocationButton.addEventListener("click", getCurrentLocation);
