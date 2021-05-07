@@ -1,8 +1,16 @@
 body {
-  width: 100%;
-  height: 100vh;
+  width: auto;
+  height: auto;
   color: fff;
-  background: linear-gradient(to top, #000000, #434343);
+  background: transparent;
+}
+html {
+  background: url(https://images.pexels.com/photos/3227984/pexels-photo-3227984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 h1 {
   text-align: center;
@@ -75,7 +83,7 @@ div.row {
 }
 div.col {
   text-align: center;
-  color: whitesmoke;
+  color: rgba(245, 245, 245, 0.171);
 }
 
 div.cardm {
